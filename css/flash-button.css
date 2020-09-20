@@ -1,0 +1,109 @@
+/**
+ * @ Author: 幸焕光
+ * @ Create Time: 2020-09-18 16:20:53
+ * @ Modified by: 幸焕光
+ * @ Modified time: 2020-09-20 11:55:30
+ * @ Description: 闪烁按钮
+ * @ URL:
+ */
+
+.ct {
+  padding: 10px 10px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ct:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.ct span {
+  position: absolute;
+  display: block;
+}
+
+.ct span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: span1 1s linear infinite;
+}
+
+@keyframes span1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.ct span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: span2 1s linear 0.25s infinite;
+}
+
+@keyframes span2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.ct span:nth-child(3) {
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: span3 1s linear 0.5s infinite;
+}
+
+@keyframes span3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.ct span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: span4 1s linear 0.75s infinite;
+}
+
+@keyframes span4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}

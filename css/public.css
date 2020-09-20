@@ -1,0 +1,29 @@
+/**
+ * @ Author: 幸焕光
+ * @ Create Time: 2020-09-20 11:52:44
+ * @ Modified by: 幸焕光
+ * @ Modified time: 2020-09-20 13:51:58
+ * @ Description: 公共样式：提供初始的背景版颜色
+ * @ URL:
+ */
+
+body {
+  background: #243b55;
+}
+
+/* 主盒子 */
+#rect {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #03e9f4;
+  border-radius: 10%;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
