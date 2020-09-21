@@ -16,14 +16,28 @@
 
 .action button {
   width: 80px;
+  height: 30px;
+  border: 1px solid #03e9f4;
   margin: 5px;
+  color: #03e9f4;
+  background: transparent;
+  cursor: pointer;
+}
+
+.action button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
 
 .wrap {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  /* column-count: 4; */
 }
 
 .img-wrap {
@@ -34,13 +48,16 @@
 }
 
 .img {
-  border: 1px solid #ccc;
+  border: 1px solid #03e9f4;
+  box-shadow: 0 0 1px #03e9f4,
+    0 0 5px #03e9f4,
+    0 0 5px #03e9f4,
+    0 0 10px #03e9f4;
 
   width: 100%;
   display: inline-block;
   object-fit: cover;
 }
-
 
 [v-cloak] {
   display: none;
