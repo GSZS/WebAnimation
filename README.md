@@ -1,4 +1,4 @@
-## <b>整理 Web 琐碎知识的  一环-【Web 动画】</b>
+## <b>整理 Web 琐碎知识的一环-【Web 动画】</b>
 
 [![Travis](https://img.shields.io/badge/javascript-Web%E5%8A%A8%E7%94%BB-yellow)](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Animations_API)
 
