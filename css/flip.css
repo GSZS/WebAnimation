@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#rect {
+  border-radius: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.action {
+  width: 100px;
+}
+
+.action button {
+  width: 80px;
+  margin: 5px;
+}
+
+.wrap {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  /* column-count: 4; */
+}
+
+.img-wrap {
+  width: 25px;
+  height: 25px;
+  margin: 5px 15px;
+  text-align: center;
+}
+
+.img {
+  border: 1px solid #ccc;
+
+  width: 100%;
+  display: inline-block;
+  object-fit: cover;
+}
+
+
+[v-cloak] {
+  display: none;
+}
