@@ -2,7 +2,7 @@
  * @ Author: 幸焕光
  * @ Create Time: 2020-09-21 09:30:14
  * @ Modified by: 幸焕光
- * @ Modified time: 2020-09-21 21:18:59
+ * @ Modified time: 2020-09-21 21:48:19
  * @ Description: FLIP动画-多维网格
  * @ URL:
  -->
@@ -23,9 +23,9 @@
 <body>
   <div id="rect" v-cloak>
     <div class="action">
-      <button @click="add">add</button>
-      <button @click="shuffle">out-of-order</button></button>
-      <button @click="reset">reset</button>
+      <button @click="add">添加元素</button>
+      <button @click="shuffle">随机排布</button></button>
+      <button @click="reset">重制</button>
     </div>
     <div class="wrap">
       <div class="img-wrap" v-for="value in imgs" :key="value">
@@ -62,13 +62,12 @@
         })
       },
       scheduleAnimation(update) {
-        // 获取旧图片的位置
         const prevImgs = this.$refs.imgs.slice()
         const prevSrcRectMap = createSrcRectMap(prevImgs)
 
-        // 更新数据
+        // 更新元素
         update()
-        // DOM更新后
+
         this.$nextTick(() => {
           const currentSrcRectMap = createSrcRectMap(prevImgs)
           Object.keys(prevSrcRectMap).forEach(domObj => {
